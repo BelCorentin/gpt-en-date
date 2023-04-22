@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="chat-container">
+    <header>
+        <img src="{{ url_for('static', filename='images/user.png') }}" alt="User" class="profile-pic">
+        <span class="chat-header">Chat with a Tinder Hot Girl !!!</span>
+        <img src="{{ url_for('static', filename='images/bot.png') }}" alt="Bot" class="profile-pic">
+    </header>
+
+    <main class="chat-messages" id="chat-messages">
+        <!-- Messages will be appended here -->
+    </main>
+
+    <aside class="typing-indicator" id="typing-indicator">
+        <span></span>
+    </aside>
+
+    <form id="message-form" class="chat-input">
+        <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off" required>
+        <button type="submit">Send</button>
+    </form>
+</div>
+{% endblock %}
