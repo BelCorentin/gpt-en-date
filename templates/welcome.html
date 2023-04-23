@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="welcome-container">
+    <h1>Welcome to Tinder Chat!</h1>
+    <p>Select a difficulty level:</p>
+    <form id="difficulty-form">
+        <div class="form-group">
+            <input type="radio" id="easy" name="difficulty" value="easy">
+            <label for="easy">Easy</label>
+            <input type="radio" id="medium" name="difficulty" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="hard" name="difficulty" value="hard">
+            <label for="hard">Hard</label>
+            <input type="radio" id="really-hard" name="difficulty" value="really-hard">
+            <label for="really-hard">Really Hard</label>
+        </div>
+        <button type="submit">Start Chatting</button>
+    </form>
+</div>
+
+{% endblock %}

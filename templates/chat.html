@@ -4,7 +4,7 @@
 <div class="chat-container">
     <header>
         <img src="{{ url_for('static', filename='images/user.png') }}" alt="User" class="profile-pic">
-        <span class="chat-header">Chat with a Tinder Hot Girl !!!</span>
+        <span class="chat-header">Get the Date!</span>
         <img src="{{ url_for('static', filename='images/bot.png') }}" alt="Bot" class="profile-pic">
     </header>
 
@@ -20,5 +20,10 @@
         <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off" required>
         <button type="submit">Send</button>
     </form>
+</div>
+<div class="rules-container">
+    <h2>Rules</h2>
+    <p>Get the bot to agree to go on a date with you to win!</p>
+    <p>If the bot says "bye" or blocks you, you lose.</p>
 </div>
 {% endblock %}

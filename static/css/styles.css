@@ -20,6 +20,7 @@ body {
 }
 
 .chat-container {
+    height: 100vh;
     width: 600px;
     background: var(--secondary);
     border-radius: 5px;
@@ -118,3 +119,80 @@ button {
 button:hover {
     background: var(--primary);
 }
+
+.loading-indicator {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.loading-indicator span {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--accent);
+    border-radius: 50%;
+    margin: 0 0.2rem;
+    animation: blink 0.5s infinite;
+}
+
+.profile-pic {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.rules-container {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    width: 15rem;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.win-animation {
+    animation: winAnimation 2s infinite;
+}
+
+@keyframes winAnimation {
+    0% {
+        border-color: #4CAF50;
+    }
+
+    25% {
+        border-color: #66BB6A;
+    }
+
+    50% {
+        border-color: #43A047;
+    }
+
+    75% {
+        border-color: #388E3C;
+    }
+}
+
+/* Lose animation styles... */
+
+:root {
+    --primary: #3A7FFB;
+    /* Blue */
+    --secondary: #FF7A7A;
+    /* Pink */
+    --light: #F2F2F2;
+    --dark: #222831;
+}
+
+body {
+    background: var(--light);
+    color: #333;
+}
+
+.chat-container {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Update other elements... */
